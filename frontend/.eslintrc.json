@@ -6,15 +6,15 @@
   },
   "rules": {
     "indent": [
-        "error",
+        "warn",
         4
     ],
     "linebreak-style": [
-        "error",
+        "warn",
         "LF"
     ],
     "quotes": [
-        "error",
+        "warn",
         "single"
     ],
     "semi": [
@@ -22,5 +22,5 @@
         "never"
     ],
     "no-unused-vars": "warn"
-}
+    }
 }
