@@ -17,44 +17,70 @@ Different steps need to be followed to run each component.
 ### Frontend
 
 1. Navigate to the frontend directory:
-`cd frontend`
+```sh
+cd frontend
+```
 
 1. Install dependencies:
-`npm install`
+```sh
+npm install
+```
 
 1. Run the frontend:
-`npm run dev`
+```sh
+npm run dev
+```
 
 ### Node.js Server
 
 1. Navigate to the node server directory:
-`cd node-server`
+```sh
+cd node-server
+```
 
 1. Install dependencies:
-`npm install`
+```sh
+npm install
+```
 
 1. Run the server:
-`npm run dev`
+```sh
+npm run dev
+```
 
 ### Flask Server
 
 1. Navigate to the flask server directory:
-`cd flask-server`
+```sh
+cd flask-server
+```
 
 2. Create a virtual environment (Windows):
-`python -m venv venv`
+```sh
+python -m venv venv
+```
 
-    For Mac, use:
-`python3 -m venv venv`
+For Mac, use:
+```sh
+python3 -m venv venv
+```
 
 3. Activate the virtual environment (Windows):
-`.\venv\Scripts\activate`
+```shell
+.\venv\Scripts\activate
+```
 
-    For Mac, use:
-`source venv/bin/activate`
+For Mac, use:
+```sh
+source venv/bin/activate
+```
 
 1. Install packages:
-`pip install -r requirements.txt`
+```sh
+pip install -r requirements.txt
+```
 
 1. Start the server:
-`python app.py`
+```sh
+python app.py
+```
