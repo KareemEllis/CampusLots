@@ -40,13 +40,16 @@
 #######################
 # FLASK SERVER DEPENDENCIES
 #######################
+*__pycache__
+*/venv
 
 
-
-
-
-
-
-#######################
-# NODE SERVER DEPENDENCIES
-#######################
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
