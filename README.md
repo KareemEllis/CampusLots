@@ -1,6 +1,6 @@
 # CampusLots
 
-## Project Structure
+### Project Structure
 
 This repository contains the following components:
 
@@ -14,48 +14,48 @@ Different steps need to be followed to run each component.
 
 ## Setting Up and Running Components
 
-### Frontend
+## Frontend
 
-1. Navigate to the frontend directory:
+Navigate to the frontend directory:
 ```sh
 cd frontend
 ```
 
-1. Install dependencies:
+Install dependencies:
 ```sh
 npm install
 ```
 
-1. Run the frontend:
+Run the frontend:
 ```sh
 npm run dev
 ```
 
-### Node.js Server
+## Node.js Server
 
-1. Navigate to the node server directory:
+Navigate to the node server directory:
 ```sh
 cd node-server
 ```
 
-1. Install dependencies:
+Install dependencies:
 ```sh
 npm install
 ```
 
-1. Run the server:
+Run the server:
 ```sh
 npm run dev
 ```
 
-### Flask Server
+## Flask Server
 
-1. Navigate to the flask server directory:
+Navigate to the flask server directory:
 ```sh
 cd flask-server
 ```
 
-2. Create a virtual environment (Windows):
+Create a virtual environment (Windows):
 ```sh
 python -m venv venv
 ```
@@ -65,7 +65,7 @@ For Mac, use:
 python3 -m venv venv
 ```
 
-3. Activate the virtual environment (Windows):
+Activate the virtual environment (Windows):
 ```shell
 .\venv\Scripts\activate
 ```
@@ -75,12 +75,12 @@ For Mac, use:
 source venv/bin/activate
 ```
 
-1. Install packages:
+Install packages:
 ```sh
 pip install -r requirements.txt
 ```
 
-1. Start the server:
+Start the server:
 ```sh
 python app.py
 ```
