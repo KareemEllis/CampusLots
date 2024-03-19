@@ -71,6 +71,7 @@ export default function HowItWorks() {
           md: 'repeat(3, 1fr)',
         }}
         gap={{ base: '8', sm: '12', md: '16' }}
+        textAlign={{ base: 'center', sm: 'left' }}
       >
         {features.map((feature, index) => (
           <Feature
