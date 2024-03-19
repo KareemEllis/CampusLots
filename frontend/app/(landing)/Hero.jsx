@@ -7,15 +7,12 @@ import {
   Text,
   Button,
   Stack,
-  Icon,
-  useColorModeValue,
-  createIcon,
 } from '@chakra-ui/react'
 
 export default function Hero() {
   return (
     <>
-      <Container maxW={'3xl'}>
+      <Container maxW={'5xl'}>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -24,14 +21,14 @@ export default function Hero() {
         >
           <Heading
             fontWeight={700}
-            fontSize={{ base: '4xl', sm: '6xl', md: '7xl' }}
+            fontSize={{ base: '5xl', sm: '6xl', md: '8xl' }}
             lineHeight={'110%'}>
               Effortless Parking<br />
             <Text as={'span'} color={'accent.500'}>
               Simplified!
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
+          <Text color={'gray.500'} fontSize={'lg'}>
           Find the perfect parking spot hassle-free with Campus Lots. Our smart app uses advanced technology to ensure you never waste time searching for parking again.
           </Text>
           <Stack
@@ -41,12 +38,11 @@ export default function Hero() {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              rounded={'full'}
               px={6}
             >
               Get Started
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+            <Button variant={'link'} color={'accent.500'} size={'sm'}>
               Learn more
             </Button>
           </Stack>

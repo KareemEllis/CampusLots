@@ -25,6 +25,7 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons'
 
+import { IoCaretDown } from 'react-icons/io5'
 
 const NAV_ITEMS = [
     {
@@ -32,7 +33,7 @@ const NAV_ITEMS = [
       href: '#',
     },
     {
-      label: 'About Us',
+      label:  <>About Us<Icon as={IoCaretDown} color={'accent.700'}/></>,
       children: [
         {
           label: 'Our Mission',
@@ -55,7 +56,7 @@ const NAV_ITEMS = [
       href: '#',
     },
     {
-      label: 'Contact',
+      label: <>Contact<Icon as={IoCaretDown} color={'accent.700'}/></>, 
       children: [
         {
           label: 'Contact Us',

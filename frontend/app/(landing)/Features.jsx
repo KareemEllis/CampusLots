@@ -56,7 +56,7 @@ export default function SplitWithImage() {
         >
           <Text
             textTransform={'uppercase'}
-            color={'blue.400'}
+            color={'primary.400'}
             fontWeight={600}
             fontSize={'sm'}
             bg={useColorModeValue('blue.50', 'blue.900')}
