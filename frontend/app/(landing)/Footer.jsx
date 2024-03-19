@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 
 const SocialButton = ({ children, label, href}) => {
