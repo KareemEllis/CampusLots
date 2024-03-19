@@ -28,42 +28,51 @@ import {
 
 const NAV_ITEMS = [
     {
-      label: 'Inspiration',
+      label: 'Home',
+      href: '#',
+    },
+    {
+      label: 'About Us',
       children: [
         {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
+          label: 'Our Mission',
+          subLabel: 'Empowering Seamless Parking Experiences',
           href: '#',
         },
         {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
+          label: 'Our Team',
+          subLabel: 'Meet the Visionaries Behind Campus Lots',
           href: '#',
         },
       ],
     },
     {
-      label: 'Find Work',
+      label: 'How it Works',
+      href: '#',
+    },
+    {
+      label: 'Features',
+      href: '#',
+    },
+    {
+      label: 'Contact',
       children: [
         {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
+          label: 'Contact Us',
+          subLabel: 'Reach Out for Assistance or Inquiries',
           href: '#',
         },
         {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
+          label: 'Feedback',
+          subLabel: 'Share Your Thoughts with Us',
           href: '#',
         },
+        {
+          label: 'Support',
+          subLabel: 'We\'re Here to Help You Every Step of the Way',
+          href: '#',
+        }
       ],
-    },
-    {
-      label: 'Learn Design',
-      href: '#',
-    },
-    {
-      label: 'Hire Designers',
-      href: '#',
     },
 ]
 
@@ -79,7 +88,7 @@ export default function WithSubnavigation() {
       borderStyle={'solid'}
       borderColor={useColorModeValue('gray.200', 'gray.900')}
     >
-    <Container maxW={'5xl'}>
+    <Container maxW={'6xl'}>
         <Flex
             bg={useColorModeValue('white', 'gray.800')}
             color={useColorModeValue('gray.600', 'white')}
