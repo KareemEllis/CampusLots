@@ -12,9 +12,27 @@ import {
   Icon,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp, IoTime, IoMapOutline } from 'react-icons/io5'
-import { LiaRouteSolid, LiaMapMarkerAltSolid, LiaParkingSolid } from "react-icons/lia";
-import { ReactElement } from 'react'
+import { IoTime, IoMapOutline } from 'react-icons/io5'
+import { LiaMapMarkerAltSolid, LiaParkingSolid } from "react-icons/lia";
+
+const features = [
+  {
+    icon: <Icon as={IoTime} color={'accent.700'} w={5} h={5} />,
+    text: 'Real-time Parking Availability Updates'
+  },
+  {
+    icon: <Icon as={LiaMapMarkerAltSolid} color={'accent.700'} w={5} h={5} />,
+    text: 'Efficient Route Recommendations'
+  },
+  {
+    icon: <Icon as={LiaParkingSolid} color={'accent.700'} w={5} h={5} />,
+    text: 'Optimal Parking Lot Suggestions'
+  },
+  {
+    icon: <Icon as={IoMapOutline} color={'accent.700'} w={5} h={5} />,
+    text: 'Seamless Integration with Maps'
+  }
+]
 
 const Feature = ({ text, icon, iconBg }) => {
   return (
@@ -56,27 +74,15 @@ export default function SplitWithImage() {
             divider={
               <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')} />
             }
-            >
-            <Feature
-              icon={<Icon as={IoTime} color={'accent.700'} w={5} h={5} />}
-              iconBg={useColorModeValue('accent.100', 'accent.900')}
-              text={'Real-time Parking Availability Updates'}
-            />
-            <Feature
-              icon={<Icon as={LiaMapMarkerAltSolid} color={'accent.700'} w={5} h={5} />}
-              iconBg={useColorModeValue('accent.100', 'accent.900')}
-              text={'Efficient Route Recommendations'}
-            />
-            <Feature
-              icon={<Icon as={LiaParkingSolid} color={'accent.700'} w={5} h={5} />}
-              iconBg={useColorModeValue('accent.100', 'accent.900')}
-              text={'Optimal Parking Lot Suggestions'}
-            />
-            <Feature
-              icon={<Icon as={IoMapOutline} color={'accent.700'} w={5} h={5} />}
-              iconBg={useColorModeValue('accent.100', 'accent.900')}
-              text={'Seamless Integration with Maps'}
-            />
+          >
+            {features.map((item) => (
+              <Feature
+                icon={item.icon}
+                iconBg={useColorModeValue('accent.100', 'accent.900')}
+                text={item.text}
+              />
+            ))
+            }
           </Stack>
         </Stack>
         <Flex>
