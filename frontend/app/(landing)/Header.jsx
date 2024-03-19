@@ -97,7 +97,7 @@ export default function WithSubnavigation() {
                     aria-label={'Toggle Navigation'}
                 />
             </Flex>
-            <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+            <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} align={'center'}>
               <Image 
                 boxSize='45px'
                 src={'/CampusLotsLogo.webp'} 
@@ -115,12 +115,9 @@ export default function WithSubnavigation() {
                 direction={'row'}
                 spacing={6}
             >
-                <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-                    Sign In
-                </Button>
                 <Button
                     as={'a'}
-                    display={{ base: 'none', md: 'inline-flex' }}
+                    display={'inline-flex'}
                     fontSize={'sm'}
                     fontWeight={600}
                     color={'white'}
@@ -130,7 +127,7 @@ export default function WithSubnavigation() {
                     bg: 'primary.300',
                     }}
                 >
-                    Sign Up
+                    Get Started
                 </Button>
             </Stack>
         </Flex>

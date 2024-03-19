@@ -11,6 +11,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react'
 
+import { FaGithub } from 'react-icons/fa'
 
 const SocialButton = ({ children, label, href}) => {
   return (
@@ -81,14 +82,8 @@ export default function SmallCentered() {
           <Text>{`© ${new Date().getFullYear()} Campus Lots. All rights reserved.`}</Text>
           
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              Twitter
-            </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              YOutube
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
-              Instagram
+            <SocialButton label={'GitHub'} href={'#'}>
+              <FaGithub />
             </SocialButton>
           </Stack>
         </Container>

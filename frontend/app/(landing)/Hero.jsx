@@ -23,18 +23,16 @@ export default function Hero() {
           py={{ base: 20, md: 20 }}
         >
           <Heading
-            fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            fontWeight={700}
+            fontSize={{ base: '4xl', sm: '6xl', md: '7xl' }}
             lineHeight={'110%'}>
-            Make money from <br />
-            <Text as={'span'} color={'pink.400'}>
-              your audience
+              Effortless Parking<br />
+            <Text as={'span'} color={'accent.500'}>
+              Simplified!
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Monetize your content by charging your most loyal readers and reward them
-            loyalty points. Give back to your loyal readers by granting them access to
-            your pre-releases and sneak-peaks.
+          Find the perfect parking spot hassle-free with Campus Lots. Our smart app uses advanced technology to ensure you never waste time searching for parking again.
           </Text>
           <Stack
             direction={'column'}
