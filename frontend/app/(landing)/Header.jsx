@@ -5,6 +5,7 @@ import {
   Box,
   Flex,
   Text,
+  Image,
   IconButton,
   Button,
   Stack,
@@ -97,16 +98,15 @@ export default function WithSubnavigation() {
                 />
             </Flex>
             <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                <Text
-                    textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-                    fontFamily={'heading'}
-                    color={useColorModeValue('gray.800', 'white')}>
-                    Campus Lots Logo
-                </Text>
+              <Image 
+                boxSize='45px'
+                src={'/CampusLotsLogo.webp'} 
+                alt='Campus Lots Logo' 
+              />
 
-                <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-                    <DesktopNav />
-                </Flex>
+              <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+                <DesktopNav />
+              </Flex>
             </Flex>
 
             <Stack

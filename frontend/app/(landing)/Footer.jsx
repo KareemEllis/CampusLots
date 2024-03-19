@@ -2,6 +2,7 @@
 
 import {
   Box,
+  Image,
   chakra,
   Container,
   Stack,
@@ -47,16 +48,17 @@ export default function SmallCentered() {
         justify={'center'}
         align={'center'}
       >
-        <h1>Logo</h1>
+        <Image 
+          boxSize='45px'
+          src={'/CampusLotsLogo.webp'} 
+          alt='Campus Lots Logo' 
+        />
         <Stack direction={'row'} spacing={6}>
           <Box as="a" href={'#'}>
             Home
           </Box>
           <Box as="a" href={'#'}>
-            About
-          </Box>
-          <Box as="a" href={'#'}>
-            Blog
+            Features
           </Box>
           <Box as="a" href={'#'}>
             Contact
@@ -76,7 +78,8 @@ export default function SmallCentered() {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>{`© ${new Date().getFullYear()} Campus Lots. All rights reserved.`}</Text>
+          
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               Twitter
