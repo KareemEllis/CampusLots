@@ -1,3 +1,16 @@
+# local env files
+.env*.local
+
+#######################
+# VISION ALGORITHM
+#######################
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.webm
+
+
 #######################
 # FRONTEND DEPENDENCIES
 #######################
@@ -24,9 +37,6 @@
 *npm-debug.log*
 *yarn-debug.log*
 *yarn-error.log*
-
-# local env files
-.env*.local
 
 # vercel
 *.vercel
