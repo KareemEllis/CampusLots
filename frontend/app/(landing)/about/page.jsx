@@ -1,22 +1,16 @@
 'use client'
 
+import Team from './Team'
+
 import {
     Container,
-    SimpleGrid,
-    Image,
-    Flex,
-    Heading,
-    Text,
-    Stack,
-    StackDivider,
-    Icon,
-    useColorModeValue,
-  } from '@chakra-ui/react'
+} from '@chakra-ui/react'
 
 export default function page() {
   return (
     <Container maxW={'5xl'} pb={20} id='Features'>
         page
+        <Team />
     </Container>
   )
 }
