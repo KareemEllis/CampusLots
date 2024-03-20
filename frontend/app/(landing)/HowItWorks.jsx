@@ -51,15 +51,12 @@ const Feature = ({ heading, text }) => {
 
 export default function HowItWorks() {
   return (
-    <Box as={Container} maxW="5xl" mb={20} p={4}>
+    <Box as={Container} maxW="5xl" mb={20} p={4} id='HowItWorks'>
       
       <Box textAlign={'center'}>
         <chakra.h2 fontSize="3xl" fontWeight="700" mb={4}>
           How It Works!
         </chakra.h2>
-        <Button size="md">
-          See Examples
-        </Button>
       </Box>
       
 

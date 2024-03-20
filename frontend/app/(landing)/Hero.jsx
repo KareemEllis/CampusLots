@@ -12,7 +12,7 @@ import {
 export default function Hero() {
   return (
     <>
-      <Container maxW={'5xl'}>
+      <Container maxW={'5xl'} mt={20} mb={10}>
         <Stack
           as={Box}
           textAlign={'center'}

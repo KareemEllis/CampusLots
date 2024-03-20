@@ -47,7 +47,7 @@ const Feature = ({ text, icon, iconBg }) => {
 
 export default function SplitWithImage() {
   return (
-    <Container maxW={'5xl'} pb={20}>
+    <Container maxW={'5xl'} pb={20} id='Features'>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} >
         <Stack 
           spacing={4} 
@@ -90,7 +90,7 @@ export default function SplitWithImage() {
             rounded={'md'}
             alt={'feature image'}
             src={
-              'https://images.unsplash.com/photo-1478860409698-8707f313ee8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+              'https://images.unsplash.com/photo-1500333070776-343c73e1eb4a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             }
             objectFit={'cover'}
           />

@@ -30,7 +30,7 @@ import { IoCaretDown } from 'react-icons/io5'
 const NAV_ITEMS = [
     {
       label: 'Home',
-      href: '#',
+      href: '/',
     },
     {
       label:  <>About Us<Icon as={IoCaretDown} color={'accent.700'}/></>,
@@ -49,11 +49,11 @@ const NAV_ITEMS = [
     },
     {
       label: 'How it Works',
-      href: '#',
+      href: '/#HowItWorks',
     },
     {
       label: 'Features',
-      href: '#',
+      href: '/#Features',
     },
     {
       label: <>Contact<Icon as={IoCaretDown} color={'accent.700'}/></>, 
@@ -88,11 +88,16 @@ export default function WithSubnavigation() {
       borderBottom={1}
       borderStyle={'solid'}
       borderColor={useColorModeValue('gray.200', 'gray.900')}
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      zIndex={999}
+      bg={useColorModeValue('white', 'gray.800')}
+      color={useColorModeValue('gray.600', 'white')}
     >
     <Container maxW={'6xl'}>
         <Flex
-            bg={useColorModeValue('white', 'gray.800')}
-            color={useColorModeValue('gray.600', 'white')}
             align={'center'}
         >
             <Flex
@@ -108,12 +113,25 @@ export default function WithSubnavigation() {
                 />
             </Flex>
             <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} align={'center'}>
-              <Image 
-                boxSize='45px'
-                src={'/CampusLotsLogo.webp'} 
-                alt='Campus Lots Logo' 
-              />
-
+              <Box
+                as="a"
+                href={'/'}
+                sx={{ display: 'flex', alignItems: 'center' }}
+              >
+                <Image 
+                  boxSize='45px'
+                  src={'/CampusLotsLogo.webp'} 
+                  alt='Campus Lots Logo' 
+                />
+                <Text
+                  fontWeight={500}
+                  ml={2}
+                >
+                  CampusLots
+                </Text>
+              </Box>
+              
+              
               <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                 <DesktopNav />
               </Flex>
