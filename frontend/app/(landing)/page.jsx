@@ -1,4 +1,3 @@
-import Header from './Header'
 import Hero from './Hero'
 import Features from './Features'
 import Footer from './Footer'
@@ -8,7 +7,6 @@ import Smth from './Smth'
 export default function Home() {
     return (
         <main>
-            <Header />
             <Hero />
             <Features />
             <Smth />
