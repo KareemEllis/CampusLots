@@ -23,7 +23,7 @@ export default function Smth() {
                 <Player
                     autoplay
                     loop
-                    src="https://lottie.host/5c38ae4b-7f8a-4e68-9c97-a71113cfe64b/39Bhp9rOLu.json"
+                    src="https://lottie.host/b21f1a44-b120-4fb3-8cec-14ca97e2bce0/AzSzfTJKFS.json"
                     style={{ maxWidth: '450px'}}
                     speed={0.7}
                     resizeMode='cover'
