@@ -131,7 +131,7 @@ export default function Team() {
         <Grid
         templateColumns={{
           base: 'repeat(1, 1fr)',
-          sm: 'repeat(2, 1fr)',
+          md: 'repeat(2, 1fr)',
         }}
         gap={{ base: '8', sm: '12', md: '16' }}
         textAlign={{ base: 'center', sm: 'left' }}

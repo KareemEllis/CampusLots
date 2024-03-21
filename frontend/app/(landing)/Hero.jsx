@@ -12,12 +12,12 @@ import {
 export default function Hero() {
   return (
     <>
-      <Container maxW={'5xl'} mt={20} mb={10}>
+      <Container maxW={'5xl'} mt={5} mb={5}>
         <Stack
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 20 }}
+          py={{ base: 16, md: 20 }}
         >
           <Heading
             fontWeight={700}

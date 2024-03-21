@@ -55,26 +55,6 @@ const NAV_ITEMS = [
       label: 'Features',
       href: '/#Features',
     },
-    {
-      label: <>Contact<Icon as={IoCaretDown} color={'accent.700'}/></>, 
-      children: [
-        {
-          label: 'Contact Us',
-          subLabel: 'Reach Out for Assistance or Inquiries',
-          href: '#',
-        },
-        {
-          label: 'Feedback',
-          subLabel: 'Share Your Thoughts with Us',
-          href: '#',
-        },
-        {
-          label: 'Support',
-          subLabel: 'We\'re Here to Help You Every Step of the Way',
-          href: '#',
-        }
-      ],
-    },
 ]
 
 export default function WithSubnavigation() {
@@ -88,11 +68,6 @@ export default function WithSubnavigation() {
       borderBottom={1}
       borderStyle={'solid'}
       borderColor={useColorModeValue('gray.200', 'gray.900')}
-      position="fixed"
-      top={0}
-      left={0}
-      right={0}
-      zIndex={999}
       bg={useColorModeValue('white', 'gray.800')}
       color={useColorModeValue('gray.600', 'white')}
       
@@ -127,6 +102,7 @@ export default function WithSubnavigation() {
                 <Text
                   fontWeight={500}
                   ml={2}
+                  display={{ base: 'none', md: 'block' }}
                 >
                   CampusLots
                 </Text>
@@ -279,15 +255,6 @@ const MobileNavItem = ({ label, children, href }) => {
         <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
           {label}
         </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={'all .25s ease-in-out'}
-            transform={isOpen ? 'rotate(180deg)' : ''}
-            w={6}
-            h={6}
-          />
-        )}
       </Box>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>

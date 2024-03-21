@@ -12,7 +12,7 @@ import {
 
 export default function page() {
   return (
-    <Container maxW={'5xl'} pb={20} mt={'120px'}>
+    <Container maxW={'5xl'} pb={20} mt={20}>
       <Heading
         fontWeight={700}
         fontSize={'6xl'}
