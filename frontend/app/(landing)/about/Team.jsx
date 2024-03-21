@@ -30,7 +30,7 @@ const persons = [
   },
   {
     name: 'Roschelle Matthews-Rhoden',
-    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: 'https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg',
     socialLinks: [
      {
       label: 'LinkedIn',
@@ -64,23 +64,9 @@ const persons = [
   },
   {
     name: 'Alyssa Walker',
-    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imageUrl: 'https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg',
     socialLinks: [
-     {
-      label: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/kareem-ellis-1b14a318b/',
-      icon: <FaLinkedin />
-     },
-     {
-      label: 'GitHub',
-      url: 'https://github.com/KareemEllis',
-      icon: <FaGithub />
-     },
-     {
-      label: 'Website',
-      url: 'https://www.kareemellis.com/',
-      icon: <FaGlobe />
-     },
+
     ],
     description: 'Full-Stack dev from Jamaica bringing websites and applications to life.'
   },
@@ -124,11 +110,11 @@ const PersonInfo = ({ name, imageUrl, socialLinks, description }) => {
 export default function Team() {
   return (
     <>
-      <Container maxW={'5xl'} mt={20} mb={10}>
+      <Container maxW={'5xl'} mt={20} mb={10} id='Team'>
         <Stack
           as={Box}
           textAlign={'center'}
-          py={{ base: 20, md: 20 }}
+          mb={20}
         >
           <Heading
             fontWeight={700}

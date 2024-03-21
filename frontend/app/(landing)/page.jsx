@@ -11,7 +11,6 @@ export default function Home() {
             <Features />
             <Smth />
             <HowItWorks />
-            <Footer />
         </main>
     )
 }

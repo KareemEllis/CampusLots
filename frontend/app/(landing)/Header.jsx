@@ -38,12 +38,12 @@ const NAV_ITEMS = [
         {
           label: 'Our Mission',
           subLabel: 'Empowering Seamless Parking Experiences',
-          href: '#',
+          href: '/about#Mission',
         },
         {
           label: 'Our Team',
           subLabel: 'Meet the Visionaries Behind Campus Lots',
-          href: '#',
+          href: '/about#Team',
         },
       ],
     },
@@ -95,6 +95,7 @@ export default function WithSubnavigation() {
       zIndex={999}
       bg={useColorModeValue('white', 'gray.800')}
       color={useColorModeValue('gray.600', 'white')}
+      
     >
     <Container maxW={'6xl'}>
         <Flex
