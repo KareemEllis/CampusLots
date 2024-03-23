@@ -10,7 +10,7 @@ import {
 
 const CTA = () => {
   return (
-    <Container maxW={'5xl'} mt={20}>
+    <Container maxW={'5xl'} mb={20}>
         <Stack
         direction={{ base: 'column', md: 'row' }}
         spacing={5}
@@ -52,7 +52,7 @@ const CTA = () => {
             mb={{ base: 2, sm: 0 }}
             lineHeight={1}
             bg={'primary.500'}
-            _hover={{ bgGradient: 'linear(to-l, #0ea5e9,#2563eb)' }}
+            _hover={{ bg: 'primary.600' }}
             >
             Get Started
             </Button>
@@ -62,8 +62,8 @@ const CTA = () => {
             size="lg"
             rounded="md"
             mb={{ base: 2, sm: 0 }}
-            bg={'gray.200'}
-            _hover={{ bg: 'gray.300' }}
+            bg={'gray.300'}
+            _hover={{ bg: 'gray.400' }}
             lineHeight={1}
             >
             Learn more
