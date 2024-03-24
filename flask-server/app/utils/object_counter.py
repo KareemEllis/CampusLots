@@ -261,23 +261,23 @@ class ObjectCounter:
                 
 
         # Display counts based on user choice
-        counts_label = None
-        if not self.view_in_counts and not self.view_out_counts:
-            counts_label = None
-        elif not self.view_in_counts:
-            counts_label = outcount_label
-        elif not self.view_out_counts:
-            counts_label = incount_label
-        else:
-            counts_label = f"{incount_label} {outcount_label}"
+        # counts_label = None
+        # if not self.view_in_counts and not self.view_out_counts:
+        #     counts_label = None
+        # elif not self.view_in_counts:
+        #     counts_label = outcount_label
+        # elif not self.view_out_counts:
+        #     counts_label = incount_label
+        # else:
+        #     counts_label = f"{incount_label} {outcount_label}"
 
-        if counts_label is not None:
-            self.annotator.count_labels(
-                counts=counts_label,
-                count_txt_size=self.count_txt_thickness,
-                txt_color=self.count_txt_color,
-                color=self.count_color,
-            )
+        # if counts_label is not None:
+        #     self.annotator.count_labels(
+        #         counts=counts_label,
+        #         count_txt_size=self.count_txt_thickness,
+        #         txt_color=self.count_txt_color,
+        #         color=self.count_color,
+        #     )
 
     def display_frames(self):
         """Display frame."""
