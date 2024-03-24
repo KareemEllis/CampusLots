@@ -1,5 +1,6 @@
 from flask import Flask, Response
 from flask_cors import CORS
+import json
 import time
 
 app = Flask(__name__)
@@ -9,13 +10,16 @@ CORS(app)
 def hello():
     return 'Hello from Flask Server!'
 
+def event_stream():
+    i = 0
+    while True:
+        data = {'message': i+1}
+        yield f"data: {json.dumps(data)}\n\n"
+        i += 1
+        time.sleep(1)
+
 @app.route('/api/sse')
-def send_event():
-    def event_stream():
-        for i in range(30):
-            yield f"data: {{'message': 'Event {i+1}'}}\n\n"
-            print('Sending Message')
-            time.sleep(1)
+def sse():
     return Response(event_stream(), content_type='text/event-stream')
 
 
