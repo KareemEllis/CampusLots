@@ -53,7 +53,7 @@
 #######################
 *__pycache__
 */venv
-
+*venv
 
 # Editor directories and files
 .vscode/*
