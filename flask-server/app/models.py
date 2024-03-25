@@ -34,7 +34,6 @@ class ParkingLots(db.Model):
     def is_open(self):
         """Check if the parking lot is currently open."""
         current_time = datetime.datetime.now().time()
-        # Check if the current time is between opening and closing time
         return self.opening_time <= current_time <= self.closing_time
 
     def available_spaces(self):
@@ -47,3 +46,20 @@ class ParkingLots(db.Model):
         """Update the current capacity of the parking lot."""
         self.current_capacity = new_capacity
         db.session.commit()
+
+    def allowed_users(self):
+        """Get all user types allowed for this parking lot."""
+        allowed_users_query = Allows.query.filter_by(parking_lot_id=self.id).all()
+        allowed_users = [restriction.user_type_allowed for restriction in allowed_users_query]
+        return allowed_users
+
+
+class Allows(db.Model):
+    __tablename__ = 'lot_restrictions'
+
+    parking_lot_id = db.Column(db.Integer, db.ForeignKey('parking_lot_information.id'))
+    user_type_allowed = db.Column(db.String(50))
+
+    def __init__(self, parking_lot_id, user_type_allowed):
+        self.parking_lot_id = parking_lot_id
+        self.user_type_allowed = user_type_allowed
